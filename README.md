@@ -1,8 +1,10 @@
-# 🧠 AI Second Brain — Template
+# 🦾 Tony Stark Brain (`tony-stark-brain`)
 
-ระบบ **Second Brain (External Memory)** สำหรับทำงานกับ AI Coding Assistant (**Claude Code, Antigravity, Cursor, Codex, Gemini CLI** หรือตัวไหนก็ได้)
+> **J.A.R.V.I.S. สำหรับสาย Dev** — ระบบ **Second Brain (External Memory)** สำหรับทำงานกับ AI Coding Assistant (**Claude Code, Antigravity, Cursor, Codex, Gemini CLI** หรือตัวไหนก็ได้)
 
-ช่วยให้ AI **"จำบริบทโปรเจกต์ของคุณได้ข้ามแชท"** ไม่ต้องคอยเล่าโครงสร้างโค้ด, branch, หรืองานค้างใหม่ทุกครั้งที่เปิดแชท และรองรับทั้งคนที่ใช้ **AI 1 ตัว** หรือ **สลับใช้ AI 2+ ตัว**
+เทียบง่ายๆ แบบ Iron Man:
+- **AI แต่ละตัว** = ชุดเกราะแต่ละ Mark (สลับใช้ตามงานหรือตอน token หมด)
+- **Tony Stark Brain (Vault นี้)** = **ตัว J.A.R.V.I.S. เอง** — สมองกลางที่จำทุกโปรเจกต์ รู้กฎเหล็ก เช็กสถานะ และคอยบรีฟคุณตอนเปิดคอม รองรับทั้งคนที่ใช้ **AI 1 ตัว** หรือ **สลับใช้ AI 2+ ตัว**
 
 ---
 
@@ -30,11 +32,11 @@
 ## 🚀 เริ่มใช้งานใน 5 นาที
 
 ### ขั้นที่ 1: สร้าง Vault ของตัวเอง
-1. กดปุ่ม **"Use this template"** ด้านบนขวาของ GitHub → เลือก **"Create a new repository"**
-2. ตั้งชื่อ repo (เช่น `my-second-brain`) และแนะนำให้เลือกเป็น **Private** (เพราะต่อไปคุณจะเก็บข้อมูลโปรเจกต์จริงไว้ในนี้)
+1. กดปุ่ม **"Use this template"** ด้านบนขวาของ [ReballKung/tony-stark-brain](https://github.com/ReballKung/tony-stark-brain) → เลือก **"Create a new repository"**
+2. ตั้งชื่อ repo ของคุณ (เช่น `my-tony-stark-brain`) และแนะนำให้เลือกเป็น **Private** (เพราะต่อไปคุณจะเก็บข้อมูลโปรเจกต์จริงไว้ในนี้)
 3. Clone ลงเครื่องของคุณ เช่น:
    ```bash
-   git clone https://github.com/<your-username>/my-second-brain.git
+   git clone https://github.com/<your-username>/my-tony-stark-brain.git
    ```
 
 ### ขั้นที่ 2: ติดตั้ง Skills ให้ AI รู้จัก (เลือกตามระบบปฏิบัติการ)

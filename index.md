@@ -1,4 +1,4 @@
-# 🧠 Second Brain — Master Index
+# 🦾 Tony Stark Brain — Master Index
 
 คลังความรู้ส่วนตัว (External Memory) สำหรับทำงานร่วมกับ AI Coding Assistant ทุกตัว
 

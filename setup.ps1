@@ -60,4 +60,4 @@ if (Get-Command node -ErrorAction SilentlyContinue) {
 }
 
 Write-Host "`n🎉 ติดตั้งเสร็จสมบูรณ์! พร้อมใช้งาน Tony Stark Brain แล้วครับ" -ForegroundColor Green
-Write-Host "ขั้นตอนถัดไป: เปิดโปรเจกต์โค้ดของคุณใน AI Assistant แล้วพิมพ์ 'สร้างโปรเจกต์ใหม่' หรือดูคู่มือใน GUIDE-JUNIOR.md" -ForegroundColor Cyan
+Write-Host "ขั้นตอนถัดไป: เปิดโปรเจกต์โค้ดของคุณใน AI Assistant แล้วพิมพ์ 'สร้างโปรเจกต์ใหม่' (หรือ 'ผูกโปรเจกต์ที่มีอยู่แล้ว') ดูคู่มือใน GUIDE.md" -ForegroundColor Cyan

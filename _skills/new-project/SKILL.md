@@ -1,6 +1,6 @@
 ---
 name: new-project
-description: ใช้เมื่อเริ่มโปรเจกต์ใหม่ — สร้างโครงสร้างโปรเจกต์ใน Second Brain จาก _templates/ ลงทะเบียนใน index.md และสร้างไฟล์ pointer (AGENTS.md / CLAUDE.md / GEMINI.md) ใน workspace ในคำสั่งเดียว
+description: ใช้เมื่อเริ่มโปรเจกต์ใหม่ หรือผูกโปรเจกต์ที่มีอยู่แล้ว (เช่น repo บริษัท/ทีม) เข้ากับ vault — สร้างโครงสร้างโปรเจกต์ใน Second Brain จาก _templates/ ลงทะเบียนใน index.md และสร้างไฟล์ pointer (AGENTS.md / CLAUDE.md / GEMINI.md) ใน workspace ในคำสั่งเดียว
 ---
 
 # New Project
@@ -12,6 +12,13 @@ Templates: `<vault>/_templates/`
    - Path ของ workspace repo (เช่น `D:\Workspace\my-app` หรือ `~/Projects/my-app`)
    - คำอธิบายระบบ / tech stack สั้นๆ และใช้ AI กี่ตัว (1 ตัว หรือ 2+ ตัว)
    - ประเภท repo: **ส่วนตัว** หรือ **ทีม** (มี `CLAUDE.md` ของทีมอยู่ใน git หรือไม่)
+
+1.5 **ถ้า workspace มีโค้ดอยู่แล้ว (โปรเจกต์เดิม):** อ่านก่อนสร้างโครง ห้ามแก้ไฟล์ใดๆ ใน workspace ระหว่างอ่าน
+   - `git branch --show-current`, `git log --oneline -15`, `git status`
+   - README, ไฟล์ dependency (`package.json`, `go.mod`, `composer.json`, `pyproject.toml` ฯลฯ), โครงโฟลเดอร์ระดับบน, config lint/test/CI
+   - เอาผลไปเติมในข้อ 2: tech stack + คำสั่ง dev/build/test ใน `index.md` และ `core/rules.md` (convention ที่เห็นจากโค้ดจริง ระบุว่า "ตรวจจากโค้ด"), branch ปัจจุบัน + งานล่าสุดจาก git log ใน `status.md`
+   - สรุปสิ่งที่เข้าใจให้ผู้ใช้ตรวจ และถามกฎของทีมที่ดูจากโค้ดไม่ได้ (เช่น branch ไหนห้าม push ตรง, เปิด PR ไปที่ไหน) แล้วจดลง `core/rules.md`
+   - ไม่บันทึก secret จาก `.env` หรือ config ลง vault
 
 2. สร้างโครงใน `<vault>/<project>/` จาก `_templates/`:
    - `index.md` ← `_templates/project-index.md` (ระบุ path ของ workspace repo ด้วย)
@@ -43,6 +50,7 @@ Templates: `<vault>/_templates/`
      ```
    - **ถ้าใช้ Claude Code + เป็น repo ส่วนตัว:** สร้าง `CLAUDE.md` เนื้อหา `@AGENTS.md`
    - **ถ้าใช้ Claude Code + เป็น repo ทีม:** ห้ามแก้ `CLAUDE.md` ของทีม ให้สร้าง `CLAUDE.local.md` เนื้อหา `@AGENTS.md` และเพิ่ม `AGENTS.md`, `GEMINI.md`, `CLAUDE.local.md` ลง `.git/info/exclude`
+   - **repo ทีม/บริษัท:** ต้องไม่มีไฟล์ใหม่โผล่ใน `git status` หลังสร้าง pointer (ตรวจให้ผู้ใช้ดู)
    - *หมายเหตุ:* ถ้าไฟล์ pointer เดิมมีอยู่แล้ว ให้สำรองเป็น `*.bak-YYYYMMDD` ก่อนแทนที่
 
 5. ปิดงาน:

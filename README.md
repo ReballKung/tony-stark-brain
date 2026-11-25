@@ -15,6 +15,18 @@
 
 ---
 
+## 📋 สิ่งที่ต้องมีก่อนเริ่ม (Prerequisites)
+
+| เครื่องมือ | จำเป็นไหม | ใช้ทำอะไร |
+|---|---|---|
+| **Git** | จำเป็น | Clone/backup vault และให้ AI ตรวจ `git status` / `git branch` |
+| **AI Coding Assistant อย่างน้อย 1 ตัว** | จำเป็น | เช่น Claude Code, Antigravity, Cursor, Codex หรือ Gemini CLI (ใช้ 1 ตัว หรือ 2+ ตัวก็ได้) |
+| **Node.js 18+** (แนะนำ **22+**) | แนะนำ | ใช้รัน `vault-check` และติดตั้ง 3rd-Party Skills ด้วย `npx skills add` |
+| **[Obsidian](https://obsidian.md/)** | ไม่บังคับ (แนะนำ) | เปิดอ่าน vault สวยๆ คลิก wikilink ข้ามไฟล์ และดู Graph View |
+| **Python 3 / Chrome หรือ Edge** | เฉพาะบาง 3rd-Party Skill | Python สำหรับบางสคริปต์ใน `ui-ux-pro-max` · Node 22+ และ Chrome/Edge สำหรับ `design-taste-frontend` |
+
+---
+
 ## 🚀 เริ่มใช้งานใน 5 นาที
 
 ### ขั้นที่ 1: สร้าง Vault ของตัวเอง
@@ -68,6 +80,20 @@ done
 
 > **ใช้ Cursor / Codex / AI ตัวอื่นที่ไม่ได้อ่านโฟลเดอร์ skills?**
 > ไม่เป็นไรครับ! แค่บอกในไฟล์กฎของโปรเจกต์ (`AGENTS.md`, `.cursorrules`, `CLAUDE.md`) ให้ AI อ่าน `<VAULT_PATH>/AGENTS.md` เป็นลำดับแรก ระบบก็ทำงานได้เหมือนกันทั้งหมด
+
+### ขั้นที่ 3 (Optional): ติดตั้ง 3rd-Party Skills แนะนำอีก 25 ตัวในคำสั่งเดียว
+ถ้าอยากได้ชุด skill เสริมด้านวางแผน, TDD, Debugging, Code Review และออกแบบ UI/Landing Page (ดึงจาก GitHub ต้นฉบับโดยตรง — ต้องมี **Node.js 18+**):
+
+- **Windows (PowerShell):**
+  ```powershell
+  powershell -ExecutionPolicy Bypass -File _skills/install-recommended.ps1
+  ```
+- **macOS / Linux:**
+  ```bash
+  bash _skills/install-recommended.sh
+  ```
+
+ดูรายละเอียด skill ทั้งหมดในชุดนี้ได้ที่ [_skills/README.md](_skills/README.md)
 
 ---
 

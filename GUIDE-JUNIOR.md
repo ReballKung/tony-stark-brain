@@ -37,10 +37,19 @@
 
 ## 4. แบบฝึกหัดเริ่มใช้งานจริง (15 นาที)
 
-### ขั้นที่ 1: เตรียม Vault ของตัวเอง
+### ขั้นที่ 1: เตรียม Vault ของตัวเอง (คำสั่งเดียวจบ)
 1. กดปุ่ม **"Use this template"** บนหน้า [ReballKung/tony-stark-brain](https://github.com/ReballKung/tony-stark-brain)
 2. ตั้งชื่อ Repo ของคุณ (เช่น `my-dev-brain`) และเลือกเป็น **Private**
-3. Clone ลงเครื่อง แล้วติดตั้ง Skills ตามขั้นตอนใน [README.md](README.md)
+3. Clone ลงเครื่องแล้วรันสคริปต์ติดตั้งอัตโนมัติ (ไม่ต้องแก้ path เอง):
+   ```powershell
+   git clone https://github.com/<your-username>/my-dev-brain.git
+   cd my-dev-brain
+
+   # Windows:
+   powershell -ExecutionPolicy Bypass -File setup.ps1
+   # macOS / Linux:
+   bash setup.sh
+   ```
 
 ### ขั้นที่ 2: ผูกโปรเจกต์แรกของคุณเข้ากับ Vault
 เปิดโฟลเดอร์โปรเจกต์โค้ดของคุณ (เช่นโปรเจกต์จบหรือโปรเจกต์ฝึกหัด) ใน AI Assistant แล้วพิมพ์:

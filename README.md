@@ -30,71 +30,33 @@
 
 ---
 
-## 🚀 เริ่มต้นใช้งาน (3 ขั้นตอน)
+## 🚀 เริ่มต้นใช้งาน (2 ขั้นตอน — คำสั่งเดียวจบ)
 
-### ขั้นที่ 1: สร้าง Vault จาก Template
+### ขั้นที่ 1: สร้าง Vault ของตัวเองและ Clone ลงเครื่อง
 1. กดปุ่ม **"Use this template"** → **"Create a new repository"** บนหน้า [ReballKung/tony-stark-brain](https://github.com/ReballKung/tony-stark-brain)
 2. ตั้งชื่อ Repository (เช่น `my-second-brain`) และแนะนำให้เลือกเป็น **Private** เพื่อความปลอดภัยของข้อมูลโปรเจกต์
-3. Clone ลงเครื่องของคุณ:
+3. Clone ลงเครื่องแล้วเข้าไปในโฟลเดอร์:
    ```bash
    git clone https://github.com/<your-username>/my-second-brain.git
+   cd my-second-brain
    ```
 
-### ขั้นที่ 2: เชื่อมต่อ Skills (8 ตัวหลัก)
+### ขั้นที่ 2: รันตัวช่วยติดตั้งอัตโนมัติ (ไม่ต้องแก้ Path เอง)
+เลือกคำสั่งตามระบบปฏิบัติการของคุณ — สคริปต์จะ **เชื่อม 8 Skills หลัก**, **ถามว่าจะลง 25 Skills เสริมด้วยหรือไม่**, และ **ตรวจสุขภาพ Vault** ให้ครบในครั้งเดียว:
 
-<details>
-<summary><strong>Windows (PowerShell — ไม่ต้องเปิดสิทธิ์ Admin)</strong></summary>
+- **Windows (PowerShell):**
+  ```powershell
+  powershell -ExecutionPolicy Bypass -File setup.ps1
+  ```
+- **macOS / Linux (Terminal):**
+  ```bash
+  bash setup.sh
+  ```
 
-```powershell
-# ระบุ path ที่คุณ clone vault ไว้
-$src = "D:\Workspace\my-second-brain\_skills"
+> **ใช้ Cursor / Codex / AI ตัวอื่นที่ไม่ได้อ่านโฟลเดอร์ Skills?**  
+> เพียงระบุในไฟล์กฎของโปรเจกต์ (`AGENTS.md`, `.cursorrules`, `CLAUDE.md`) ให้ AI อ่าน `<VAULT_PATH>/AGENTS.md` เป็นลำดับแรก ระบบจะทำงานได้ทันทีโดยไม่ต้องรันสคริปต์เชื่อม Skill
 
-$targets = @(
-  "$env:USERPROFILE\.claude\skills",
-  "$env:USERPROFILE\.gemini\config\skills"
-)
-
-Get-ChildItem $src -Directory | ForEach-Object {
-  foreach ($t in $targets) {
-    if (Test-Path $t) {
-      $dst = Join-Path $t $_.Name
-      if (-not (Test-Path $dst)) {
-        New-Item -ItemType Junction -Path $dst -Target $_.FullName | Out-Null
-        "linked $dst"
-      }
-    }
-  }
-}
-```
-</details>
-
-<details>
-<summary><strong>macOS / Linux (Bash / Zsh)</strong></summary>
-
-```bash
-# ระบุ path ที่คุณ clone vault ไว้
-SRC="$HOME/Workspace/my-second-brain/_skills"
-
-for target in "$HOME/.claude/skills" "$HOME/.gemini/config/skills"; do
-  if [ -d "$target" ]; then
-    for dir in "$SRC"/*/; do
-      name=$(basename "$dir")
-      [ -e "$target/$name" ] || ln -s "$dir" "$target/$name"
-    done
-  fi
-done
-```
-</details>
-
-> **หมายเหตุสำหรับผู้ใช้ Cursor / Codex / AI อื่นๆ:** หากเครื่องมือไม่ได้อ่านโฟลเดอร์ skills อัตโนมัติ เพียงระบุในไฟล์กฎของโปรเจกต์ (`AGENTS.md`, `.cursorrules`, `CLAUDE.md`) ให้ AI อ่าน `<VAULT_PATH>/AGENTS.md` เป็นลำดับแรก ระบบจะทำงานได้ตามปกติ
-
-### ขั้นที่ 3 (เพิ่มเติม): ติดตั้ง 3rd-Party Skills แนะนำ 25 ตัว
-ติดตั้งชุด Skill เสริมด้านการวางแผน, TDD, Debugging, Code Review และ UI Design จาก GitHub ต้นฉบับโดยตรงในคำสั่งเดียว *(ต้องมี Node.js 18+)*:
-
-- **Windows:** `powershell -ExecutionPolicy Bypass -File _skills/install-recommended.ps1`
-- **macOS / Linux:** `bash _skills/install-recommended.sh`
-
-ดูรายการ Skills ทั้งหมดได้ที่ [_skills/README.md](_skills/README.md)
+ดูรายละเอียด Skills ทั้ง 8 ตัวหลัก และ 25 ตัวเสริมได้ที่ [_skills/README.md](_skills/README.md)
 
 ---
 
@@ -146,7 +108,9 @@ AI ตัวที่ 1 ──▶ ส่งไม้ต่อ (/handoff) ──�
 
 ```text
 tony-stark-brain/
+├── setup.ps1 / setup.sh      # ตัวช่วยติดตั้ง 1-Click (Windows / macOS / Linux)
 ├── AGENTS.md                 # กฎกลางสำหรับ AI ทุกตัว
+├── GUIDE-JUNIOR.md           # คู่มือฉบับสอนนักศึกษา / Junior Developer
 ├── index.md                  # สารบัญโปรเจกต์ทั้งหมด
 ├── log.md                    # ประวัติการเปลี่ยนแปลงระดับ Vault
 ├── _rules/

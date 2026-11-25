@@ -3,7 +3,9 @@ name: end-session
 description: ใช้ตอนจบงาน จบวัน หรือเมื่อผู้ใช้พิมพ์ "จบงาน", "end", "สรุปวันนี้" — อัปเดต status.md และ log.md ของโปรเจกต์ใน Second Brain ให้ตรงความจริง (ถ้างานยังค้างและจะสลับไป AI ตัวอื่น ให้ใช้ skill handoff แทน)
 ---
 
-# End Session
+# End Session
+
+> **ภาษา:** ถาม ตอบ ตัวเลือก และ checklist ทั้งหมดเป็นภาษาไทย ตาม `AGENTS.md` หัวข้อ 0
 
 1. ตรวจของจริง: `git branch --show-current`, `git status --short`, `git log --oneline -5` ในทุก repo ที่แตะวันนี้
 2. อัปเดต `<vault>/<project>/status.md` ตาม `_templates/status.md`:

@@ -3,7 +3,9 @@ name: new-feature
 description: ใช้เมื่อเริ่มฟีเจอร์ใหม่หรือได้ requirement/งานใหม่ — สร้างไฟล์ฟีเจอร์ใน Second Brain จาก template และวางแผนทีละขั้น
 ---
 
-# New Feature
+# New Feature
+
+> **ภาษา:** ถาม ตอบ ตัวเลือก และ checklist ทั้งหมดเป็นภาษาไทย ตาม `AGENTS.md` หัวข้อ 0
 
 Template: `<vault>/_templates/feature.md`
 

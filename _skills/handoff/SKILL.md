@@ -3,7 +3,9 @@ name: handoff
 description: ส่งไม้ต่องานระหว่าง AI (เช่น Claude Code ↔ Antigravity ↔ Cursor ↔ Codex) เมื่อ token/usage ใกล้หมดหรือจบ session กลางงาน หรือรับไม้ต่อเมื่อผู้ใช้พิมพ์ "ทำต่อจาก handoff"
 ---
 
-# Handoff — ส่งไม้ / รับไม้ต่อระหว่าง AI
+# Handoff — ส่งไม้ / รับไม้ต่อระหว่าง AI
+
+> **ภาษา:** ถาม ตอบ ตัวเลือก และ checklist ทั้งหมดเป็นภาษาไทย ตาม `AGENTS.md` หัวข้อ 0
 
 Template: `<vault>/_templates/handoff.md`
 

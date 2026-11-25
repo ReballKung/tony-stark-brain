@@ -14,7 +14,7 @@ Interview the user relentlessly about their plan until you reach a shared unders
 - `header` is a short topic chip, at most 12 characters (for example "เป้าหมาย", "Tech stack", "ขอบเขต").
 - The user can always pick "Other" and type their own answer, so do not add an "Other" option yourself.
 - Before the card, write one or two short lines: why this question matters and what you recommend.
-- Write questions, options and comments in the user's language (Thai if they write in Thai).
+- **Always write the question, `header`, option labels, option descriptions and comments in Thai** (see `AGENTS.md` section 0). Keep only file names, commands, branch names and common tech terms in English.
 
 ## What to ask
 

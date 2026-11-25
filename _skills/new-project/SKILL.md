@@ -3,7 +3,9 @@ name: new-project
 description: ใช้เมื่อเริ่มโปรเจกต์ใหม่ หรือผูกโปรเจกต์ที่มีอยู่แล้ว (เช่น repo บริษัท/ทีม) เข้ากับ vault — สร้างโครงสร้างโปรเจกต์ใน Second Brain จาก _templates/ ลงทะเบียนใน index.md และสร้างไฟล์ pointer (AGENTS.md / CLAUDE.md / GEMINI.md) ใน workspace ในคำสั่งเดียว
 ---
 
-# New Project
+# New Project
+
+> **ภาษา:** ถาม ตอบ ตัวเลือก และ checklist ทั้งหมดเป็นภาษาไทย ตาม `AGENTS.md` หัวข้อ 0
 
 Templates: `<vault>/_templates/`
 

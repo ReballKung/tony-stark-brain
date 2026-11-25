@@ -3,7 +3,9 @@ name: mentor-mode
 description: ใช้เมื่อผู้ใช้รายงานบั๊ก ถามสาเหตุ ขอแนวทาง หรือขอ Step by Step ในโค้ดของ repo งาน — เสนอการแก้แบบ Before / After(diff) / After(อธิบาย) / After(copy) ให้ผู้ใช้พิมพ์เองและเรียนรู้ไปด้วย โดยไม่แก้ไฟล์เอง
 ---
 
-# Mentor Mode
+# Mentor Mode
+
+> **ภาษา:** ถาม ตอบ ตัวเลือก และ checklist ทั้งหมดเป็นภาษาไทย ตาม `AGENTS.md` หัวข้อ 0
 
 กฎเต็มอยู่ที่ `<vault>/AGENTS.md` หัวข้อ 2-3 อ่านก่อนเสมอ
 

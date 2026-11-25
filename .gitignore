@@ -1,7 +1,5 @@
-# Obsidian local workspace state
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
+# Obsidian settings (each user has their own)
+.obsidian/
 
 # Local backups & temp
 _backup-*/

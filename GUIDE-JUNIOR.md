@@ -55,6 +55,8 @@ Tony Stark Brain คือ **โฟลเดอร์สมุดจด** ที
 - **Claude Code** — ติดตั้งตามหน้า https://claude.com/claude-code
 - **Antigravity** — ดาวน์โหลดจาก https://antigravity.google/
 
+ติดตั้งเสร็จแล้ว **เปิดโปรแกรมและล็อกอินให้เรียบร้อย 1 ครั้ง** ก่อนไปขั้นถัดไป เพราะตัวติดตั้งในขั้นที่ 4 จะมองหาโฟลเดอร์ที่โปรแกรมสร้างตอนเปิดครั้งแรก
+
 ใช้ 2 ตัวสลับกันได้ (ดูขั้นที่ 7)
 
 ### 1.4 Obsidian (ไม่บังคับ แต่แนะนำ)
@@ -79,13 +81,26 @@ node -v
 
 ## ขั้นที่ 2: สร้างสมุดจดของตัวเองบน GitHub
 
-ต้องมีบัญชี GitHub ก่อน (สมัครฟรีที่ https://github.com/)
+ต้องมีบัญชี GitHub ก่อน (สมัครฟรีที่ https://github.com/) และ **ล็อกอินไว้** ถ้ายังไม่ล็อกอิน ปุ่มในข้อ 2 จะไม่ขึ้น
 
 1. เปิด https://github.com/ReballKung/tony-stark-brain
-2. กดปุ่มสีเขียว **Use this template** (มุมขวาบน) แล้วเลือก **Create a new repository**
+2. ดูแถวปุ่มเหนือรายชื่อไฟล์ จะมีปุ่มสีเขียว **Use this template** อยู่ข้างปุ่ม **Code** กดแล้วเลือก **Create a new repository**
 3. ช่อง **Repository name** ตั้งชื่อ เช่น `my-second-brain`
 4. เลือก **Private** ⚠️ สำคัญมาก เพราะสมุดจดจะมีข้อมูลโปรเจกต์ของคุณ
 5. กด **Create repository**
+
+> **ไม่เห็นปุ่ม Use this template?** ใช้วิธีนี้แทน (ได้ผลเหมือนกัน)
+> 1. ไปที่ https://github.com/new ตั้งชื่อ `my-second-brain` เลือก **Private** แล้วกด **Create repository** (ไม่ต้องติ๊กอะไรเพิ่ม)
+> 2. ทำขั้นที่ 3 แต่ใช้คำสั่งชุดนี้แทน (เปลี่ยน `<ชื่อ GitHub ของคุณ>` ให้เป็นของคุณ)
+>    ```powershell
+>    mkdir D:\Workspace
+>    cd D:\Workspace
+>    git clone https://github.com/ReballKung/tony-stark-brain.git my-second-brain
+>    cd my-second-brain
+>    git remote set-url origin https://github.com/<ชื่อ GitHub ของคุณ>/my-second-brain.git
+>    git push -u origin main
+>    ```
+>    แล้วข้ามไปขั้นที่ 4 ได้เลย
 
 ตอนนี้คุณมีสมุดจดของตัวเองบน GitHub แล้ว
 
@@ -103,6 +118,8 @@ git clone https://github.com/<ชื่อ GitHub ของคุณ>/my-second-
 ```
 
 ถ้าไม่มีไดรฟ์ D: ใช้ `C:\Workspace` แทนได้
+
+> ถ้าบรรทัดแรกขึ้น error ว่า `already exists` ไม่เป็นไร แปลว่ามีโฟลเดอร์นี้อยู่แล้ว พิมพ์บรรทัดถัดไปต่อได้เลย
 
 > ครั้งแรกจะมีหน้าต่างให้ **Sign in with your browser** เพื่อเข้าสู่ระบบ GitHub กดตามได้เลย
 
@@ -148,6 +165,8 @@ powershell -ExecutionPolicy Bypass -File setup.ps1
 ## ขั้นที่ 5: ผูกโปรเจกต์แรก
 
 "โปรเจกต์" คือโฟลเดอร์โค้ดที่คุณทำงานอยู่ เช่น โปรเจกต์จบ หรือเว็บฝึกหัด
+
+> **ยังไม่มีโปรเจกต์?** สร้างโฟลเดอร์ว่างไว้ลองก่อนได้ ใน PowerShell พิมพ์ `mkdir D:\Workspace\my-web-app`
 
 ### 5.1 เปิดโปรเจกต์ในโปรแกรม AI
 - **Claude Code:** เปิด PowerShell แล้วพิมพ์

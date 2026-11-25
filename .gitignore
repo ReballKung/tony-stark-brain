@@ -1,0 +1,15 @@
+# Obsidian local workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Local backups & temp
+_backup-*/
+*.bak-*
+
+# OS & Node
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+*.log

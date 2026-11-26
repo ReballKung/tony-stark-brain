@@ -2,6 +2,7 @@
 
 ส่งไม้ต่อเมื่อ: YYYY-MM-DD HH:MM (เวลาไทย)
 จาก: [Claude Code | Antigravity] → ไปที่: [Antigravity | Claude Code]
+โหมด: [เรียน | ด่วน] (ด่วน = ผู้รับไม้อ่าน `_rules/fast-mode.md` แล้วทำต่อในโหมดด่วนทันที)
 Claude Code กลับมาใช้ได้: YYYY-MM-DD HH:MM (เวลาไทย) (ดูจาก `/usage` หรือข้อความแจ้ง limit)
 
 ## 1. เป้าหมายของงานนี้

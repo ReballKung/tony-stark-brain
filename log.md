@@ -13,3 +13,5 @@
 - 2026-11-26 [Claude Code] คำตอบแรกของงาน Step by Step ต้องมี "ผลลัพธ์ที่จะได้" (หน้าตา/ตัวอย่าง) ก่อนแผน และถามว่าตรงกับที่คาดไว้ไหมก่อนเริ่ม
 - 2026-11-26 [Claude Code] "ผลลัพธ์ที่จะได้" งาน UI: เลิกวาดกล่องด้วยตัวอักษร (ไทยทำให้เบี้ยว) ใช้ จะเห็นอะไร/กดแล้วเกิดอะไร/ได้อะไร + งานใหญ่ทำ prototypes/<งาน>/index.html
 - 2026-11-26 [Claude Code] ลด token: ย้ายรูปแบบคำตอบ (Mentor Mode + Step by Step) จาก AGENTS.md ไป _rules/response-format.md และให้อ่าน fullstack-mentor.md เฉพาะงานโค้ด
+- 2026-11-26 [Claude Code] เพิ่ม _rules/agent-ops.md (ประหยัด token, เลือกรุ่น Haiku/Sonnet/Opus, brief subagent) + self-check หา helper เดิมก่อนเขียนใหม่ ใน response-format.md · ไม่เอาการแจกงานโค้ดอัตโนมัติ/auto MR เพราะขัด Mentor Mode
+- 2026-11-26 [Claude Code] เพิ่มโหมดด่วน `_rules/fast-mode.md` (พิมพ์ "โหมดด่วน" → AI เขียนให้จนจบ, ผู้ใช้ commit/MR เอง, มีโน้ต 3 อย่างกลับมาเรียน) ใช้ได้ทั้ง Claude Code/Antigravity + ช่อง "โหมด" ใน handoff template

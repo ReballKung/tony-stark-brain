@@ -10,7 +10,7 @@ description: ใช้เมื่อผู้ใช้รายงานบั�
 กฎเต็มอยู่ที่ `<vault>/AGENTS.md` หัวข้อ 2-3 + `_rules/response-format.md` (รูปแบบคำตอบเต็มและตัวอย่าง) + `_rules/fullstack-mentor.md` อ่านก่อนเสมอ
 
 ## ขั้นตอน
-1. **ห้ามแก้ไฟล์โค้ด** จนกว่าผู้ใช้สั่ง implement ชัดเจน ("แก้เลย", "implement")
+1. **ห้ามแก้ไฟล์โค้ด** จนกว่าผู้ใช้สั่ง implement ชัดเจน ("แก้เลย", "implement") · ถ้าผู้ใช้พิมพ์ "โหมดด่วน" หรือ "ช่วยผมด้วย ผมไม่ไหวแล้ว" ให้เปลี่ยนไปใช้ `_rules/fast-mode.md`
 2. **ตรวจของจริง:** `git branch --show-current`, `git status` และเปิดไฟล์จริงที่เกี่ยวข้อง อ่าน `<vault>/<project>/core/rules.md`
 3. **ทำความเข้าใจ flow:** route → controller → service/model → DB และฝั่ง frontend → API ที่เรียก บอกผู้ใช้ว่าตรวจไฟล์ไหนบ้าง
 4. **เขียนคำตอบตามรูปแบบ:**

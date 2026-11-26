@@ -16,3 +16,4 @@
 - 2026-11-26 [Claude Code] เพิ่ม _rules/agent-ops.md (ประหยัด token, เลือกรุ่น Haiku/Sonnet/Opus, brief subagent) + self-check หา helper เดิมก่อนเขียนใหม่ ใน response-format.md · ไม่เอาการแจกงานโค้ดอัตโนมัติ/auto MR เพราะขัด Mentor Mode
 - 2026-11-26 [Claude Code] เพิ่มโหมดด่วน `_rules/fast-mode.md` (พิมพ์ "โหมดด่วน" → AI เขียนให้จนจบ, ผู้ใช้ commit/MR เอง, มีโน้ต 3 อย่างกลับมาเรียน) ใช้ได้ทั้ง Claude Code/Antigravity + ช่อง "โหมด" ใน handoff template
 - 2026-11-26 [Claude Code] เขียน README.md ใหม่: โปรเจกต์คืออะไร, ฟีเจอร์, วิธีใช้ (2 โหมด), โครงสร้าง, ไฟล์ที่โหลดเมื่อไหร่, สรุป
+- 2026-11-26 [Claude Code] เพิ่ม Escalation ladder ใน _rules/agent-ops.md หัวข้อ 4 + อ้างจาก fast-mode.md (งานไม่ผ่าน: ตรวจตัวเอง → เพิ่ม effort → ขึ้นรุ่น → รุ่นสูงสุดต้องขอก่อน)

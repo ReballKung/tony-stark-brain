@@ -167,7 +167,7 @@ Database ต้องเป็น **READ ONLY ANALYSIS** เท่านั้�
 ---
 
 # 22.1 รูปแบบคำตอบเมื่อเสนอการแก้ Code
-ใช้รูปแบบใน `AGENTS.md` หัวข้อ 2: ปัญหาที่พบ → ทุก Change มี Before / After (diff) / After (อธิบาย) / After (copy) → สิ่งที่เปลี่ยน → วิธีแก้ด้วยตัวเอง (skill `mentor-mode`)
+ใช้รูปแบบใน `_rules/response-format.md`: ปัญหาที่พบ → ทุก Change มี Before / After (diff) / After (อธิบาย) / After (copy) → สิ่งที่เปลี่ยน → วิธีแก้ด้วยตัวเอง (skill `mentor-mode`)
 
 ---
 

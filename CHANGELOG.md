@@ -18,3 +18,4 @@
 - 2026-11-26 เพิ่ม Escalation ladder ใน _rules/agent-ops.md หัวข้อ 4 + อ้างจาก fast-mode.md (งานไม่ผ่าน: ตรวจตัวเอง → เพิ่ม effort → ขึ้นรุ่น → รุ่นสูงสุดต้องขอก่อน)
 - 2026-11-26 เพิ่มคำสั่ง "Feedback: ..." (response-format ข้อ 6): ปัญหาในโค้ด → หาสาเหตุ+แก้ · ข้อติระบบ → จดลง feedback.md, "รวม feedback" เพื่อปรับกฎทีเดียว
 - 2026-11-26 แยกประวัติอัปเดตของ template ออกจาก log.md มาไว้ CHANGELOG.md (log.md เป็นของผู้ใช้ จะได้ git pull ไม่ชน) + GUIDE หัวข้อ "อัปเดตเป็นเวอร์ชันใหม่"
+- 2026-11-27 รูปแบบคำตอบ v3 (Markdown UI): 5 แม่แบบ คำตอบแรก / ทีละขั้น / ตรวจโค้ด / จบงาน / Feedback ใช้ `###` + emoji ชุดเดียว, checklist `- [ ]`, ผลตรวจ PASS / FAIL / WARNING, ปิดท้าย ➡️ NEXT ACTION (แทนแบบ v2 ● ☐ ▶ ☒) ยังเก็บ Change 4 ส่วนและคำสั่งพิมพ์เดิม · ไม่ใช้ Claude Code Output Style เพราะ AI ตัวอื่นอ่านไม่ได้และกิน token ทุกข้อความ
